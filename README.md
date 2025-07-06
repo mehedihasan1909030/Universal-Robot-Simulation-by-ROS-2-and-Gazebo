@@ -33,10 +33,15 @@ rosdep update && rosdep install --ignore-src --from-paths . -y
 cd ../ #back to main folder
 colcon build
 ```
-Now you can analyze the packages 
+Now you can analyze the packages:
+before analyze remember to setup the source
 ```bash
 source install/setup.bash
 cd src
 ls
 code ./
+```
+now you can interface your robot by:
+```bash
+ros2 launch ur_simulation_gazebo ur_sim_control.launch.py
 ```
