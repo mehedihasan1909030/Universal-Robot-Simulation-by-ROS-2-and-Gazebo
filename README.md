@@ -21,7 +21,7 @@ create a workstation in your terminator by run
 ```bash
 mkdir ur_yt_ws
 cd ur_yt_ws/
-colcon buil
+colcon build
 ```
 Now, source your project from the Universal Robot official repo.
 ```bash
@@ -45,3 +45,7 @@ now you can interface your robot by:
 ```bash
 ros2 launch ur_simulation_gazebo ur_sim_control.launch.py
 ```
+now we will see the moveit function
+```bash
+ros2 launch ur_simulation_gazebo ur_sim_moveit.launch.py
+
